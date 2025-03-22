@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Todo List App📃</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Enhanced Todo List App📃</h1>
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Enter a new todo" required>
+            <button type="submit"><i class="fas fa-plus"></i> Add Todo</button>
+        </form>
+        <div class="filters">
+            <button id="all-filter" class="active">All</button>
+            <button id="active-filter">Active</button>
+            <button id="completed-filter">Completed</button>
+        </div>
+        <ul id="todo-list"></ul>
+        <div class="todo-stats">
+            <span id="todos-count">0 items left</span>
+            <button id="clear-completed">Clear Completed</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
